@@ -10,10 +10,14 @@ namespace githubtest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("======");
-            Console.WriteLine("======");
-            Console.WriteLine("======");
-            Console.WriteLine("======");
+            for(int i = 1 ; i<=9 ; i++)
+            {
+                for (int j = 1; j <= 9; j++)
+                {
+                    Console.Write(j.ToString() + "*" + i.ToString()+ "=" + (i*j).ToString() + " ");
+                }
+                Console.WriteLine("");
+            }
             Console.Read();
         }
     }
